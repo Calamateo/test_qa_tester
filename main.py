@@ -10,11 +10,11 @@ def clean_string(words:str):
     Returns:
         set: A set of strings containing all the characters in the alphabet that are present in the input string.
     """    
-    word =set()
+    words_clean =set()
     for char in words.lower():
         if char in ALPHABET:
-            word.add(char)
-    return word
+            words_clean.add(char)
+    return words_clean
 
 def validate_alphabet(words:str):
     """The objective of the function is to receive a string as input and validate if it contains all the characters in the alphabet.
